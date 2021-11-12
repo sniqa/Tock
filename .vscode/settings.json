@@ -1,0 +1,15 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "prettier.semi": false,
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "prettier.useTabs": true,
+    "prettier.singleQuote": true,
+    "prettier.enable": true,
+    "prettier.tabWidth": 2,
+    "prettier.useEditorConfig": true
+}
