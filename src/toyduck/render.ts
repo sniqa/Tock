@@ -65,8 +65,6 @@ const fiberNodeToElement = (fiberNode: any, container: any) => {
 
 		// 如果是标记更新的位置
 		if (isStateMark(vnode)) {
-			console.log('this')
-
 			const fnode = vnode.createEffect(fiberNode, 'update_node')
 
 			fiberNode.node = render(fiber(fnode))
@@ -126,9 +124,7 @@ export const setAttrs = (el: HTMLElement, attrs: any, fiberNode: any) => {
 
 			// 如果是被标记为可以被更新的属性对象
 			if (isStateMark(attrvalue)) {
-				console.log(attrvalue)
 				const attr = attrvalue.createEffect(fiberNode, 'update_attr', attrkey)
-				console.log(attr)
 				setAttribute(el, attrkey, attr)
 				continue
 			}
